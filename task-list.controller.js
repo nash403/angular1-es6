@@ -1,11 +1,9 @@
+import TaskServerService from './task-server.service';
+
 export default class TaskListController {
-  constructor($scope) {
-    $scope.tasks = [
-      'get a pie',
-      'call mom',
-      'play Pokémon GO'
-    ];
+  constructor($scope, TaskServerService) {
+    $scope.tasks = TaskServerService.getTasks();
   }
 }
 
-TaskListController.$inject = ['$scope'];
+TaskListController.$inject = ['$scope', 'TaskServerService'];

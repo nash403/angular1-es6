@@ -1,5 +1,5 @@
 import angular from 'angular';
-import TaskListController from './task-list.controller.js';
+import TaskListController from './task-list.controller';
 
 var module = angular.module('app.controllers', [])
   .controller('TaskListController', TaskListController);

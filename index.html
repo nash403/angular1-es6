@@ -12,7 +12,7 @@
         This is my today list of tasks: 
       </p>
       <ul>
-        <li ng-repeat="t in tasks">{{ t }}</li>
+        <li ng-repeat="t in tasks" loggable="t" index="$index">{{ t }}</li>
       </ul>
     </main>
   </body>
