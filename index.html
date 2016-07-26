@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Angular 1 with ES6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <!--Display the application -->
+  <body ng-app="app">
+    <main ng-controller="TaskListController">
+      <h1>My App with Angular 1.x & ECMAscript 6!</h1>
+      <p>
+        This is my today list of tasks: 
+      </p>
+      <ul>
+        <li ng-repeat="t in tasks">{{ t }}</li>
+      </ul>
+    </main>
+  </body>
+    <!-- App js -->
+    <script src="dist/bundle.js"></script>
+</html>

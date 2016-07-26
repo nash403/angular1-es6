@@ -1,0 +1,28 @@
+{
+  "name": "angular1x-es6",
+  "version": "1.0.0",
+  "description": "Boilerplate for angular 1.x app with ES6",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "rimraf ./bundle.js && webpack"
+  },
+  "keywords": [
+    "angular",
+    "ES6",
+    "ecmascript6",
+    "es2015"
+  ],
+  "author": "@nash_403",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
